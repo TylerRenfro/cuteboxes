@@ -2,18 +2,28 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+$ce-soir: #9B72A4;
+$white: #fff;
+$east-side: #af8db7;
+$cabaret: #d05883;
+$pale-violet-red: #da7b9d;
+$saffron: #f5be39;
+$golden-glow: #face6f;
+$viking: #4dc6b6;
+$riptide: #85d5ca;
+$white: #fff;
+$font-black: #333;
 
+.container-fluid {
+  background-color: $ce-soir;
+  color: $white;
+  height: 100vh
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,7 +36,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -41,7 +50,6 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
@@ -51,7 +59,6 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -84,6 +91,7 @@ body {
   .header {
     margin-bottom: 30px;
   }
+
 
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
