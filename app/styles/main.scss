@@ -24,7 +24,8 @@ h1 {
 .logo {
   height: 10em;
 }
-p {
+p,
+.ui.form .field > label {
   font-size: 1.35em;
 }
 .container-fluid {
@@ -34,15 +35,17 @@ p {
 }
 .marketing {
   height: 100vh;
+  max-height: 100%;
 }
 .learn-more {
   text-align: center;
-  bottom: 5vh;
-  margin-top: 40vh;
+  margin-top: 20vh;
   list-style-type: none;
   font-size: 1.75em;
+  color: $white;
 }
-.learn-more:hover {
+.learn-more:hover,
+.love-box:hover {
   -webkit-animation: tada 1.5s ease;
 }
 .browsehappy {
@@ -89,4 +92,16 @@ p {
   .jumbotron {
     border-bottom: 0;
   }
+}
+.love-box {
+  padding-top: 2em;
+}
+.ui.blue.button {
+  background-color: $riptide;
+}
+.ui.blue.button:hover {
+  background-color: $viking;
+}
+.ui.blue.button:active {
+  border-color: $viking;
 }
