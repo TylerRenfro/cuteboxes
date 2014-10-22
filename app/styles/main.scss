@@ -21,9 +21,6 @@ h1 {
   font-family: "proxima-nova-soft";
   font-weight: 700; 
 }
-.logo {
-  height: 10em;
-}
 .fa-chevron-down {
   margin-left: .5em;
 }
@@ -32,7 +29,7 @@ p,
   font-size: 1.35em;
   color: $font-black;
 }
-.container-fluid {
+.primary {
   background-color: $east-side;
   color: $white;
   height: 100vh;
@@ -40,6 +37,9 @@ p,
 .marketing {
   height: 100vh;
   max-height: 100%;
+}
+.secondary {
+  margin-top: 2vh;
 }
 .learn-more {
   text-align: center;
@@ -66,10 +66,16 @@ p,
   padding-left: 15px;
   padding-right: 15px;
 }
-.landing-h1 {
-  margin-top: 20vh;
-  font-size: 4em;
-  text-align: center;
+@media screen and (min-width: 300px) {
+  .landing-h1 {
+    font-size: 2em;
+    margin-top: 20vh;
+    font-size: 2em;
+    text-align: center;
+  }
+  .logo {
+    height: 8em;
+  }
 }
 @media screen and (max-width: 900px) {
   .love-box {
@@ -81,7 +87,12 @@ p,
   .container {
     max-width: 730px;
   }
-
+  .landing-h1 {
+    font-size: 4em;
+  }
+  .logo {
+    height: 10em;
+  }
   /* Remove the padding we set earlier */
   .header,
   .marketing,
